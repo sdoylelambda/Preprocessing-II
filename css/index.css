@@ -1,3 +1,26 @@
+.btn {
+  background-color: green;
+  color: white;
+  margin: 10px 30px 20px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: 80%;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.btn:hover {
+  background-color: white;
+  color: green;
+}
+@media ( max-width: 5005px ) {
+  .btn {
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,22 +192,34 @@ img {
   margin: 0 auto;
 }
 nav a {
-  color: black
-    display flex;
+  color: black;
   align-content: space-between;
   margin-left: 20px;
+  max-width: 800px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   border-bottom: dashed-black;
   font-size: 1.7rem;
+  max-width: 800px;
+  align-self: center;
 }
 .top-section {
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   border-bottom: 1px dashed black;
   padding: 20px 0;
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }
 .footer {
   width: 100%;
@@ -245,7 +280,11 @@ nav {
 }
 h1 {
   max-width: 800px;
+  width: 100%;
   font-size: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
 }
 .fun-bus {
   max-width: 800px;

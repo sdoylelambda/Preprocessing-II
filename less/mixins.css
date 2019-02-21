@@ -1,0 +1,23 @@
+.btn {
+  background-color: green;
+  color: white;
+  margin: 10px 30px 20px;
+  cursor: pointer;
+  padding: 10px 5%;
+  width: 80%;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+.btn:hover {
+  background-color: white;
+  color: green;
+}
+@media ( max-width: 5005px ) {
+  .btn {
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+  }
+}
