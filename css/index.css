@@ -168,6 +168,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav a {
+  color: black
+    display flex;
+  align-content: space-between;
+  margin-left: 20px;
+}
+h1 {
+  max-width: 800px;
+  font-size: 4rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: dashed-black;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
