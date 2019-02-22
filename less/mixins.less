@@ -1,1 +1,37 @@
+@mobile: ~"( max-width: 500px )";
+
 // Mixins in here
+
+.btn {
+    .custom-button(80%, green, white);
+  }
+  
+  .custom-button(@width: 170px, @bg-color:black, @font-color: white) {
+    background-color: @bg-color;
+    color: @font-color;
+    margin: 10px 30px 20px;
+    cursor: pointer;
+    padding: 10px 5%;
+    width: @width;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
+  
+    @media @mobile {  
+      width: 90%;
+      height: 50px;
+      font-size: 25px;
+    }
+  }
+  body {
+    @media @mobile {  
+        display: flex;
+        flex-direction: column;
+    }
+  }
