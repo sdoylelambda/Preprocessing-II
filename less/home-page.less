@@ -1,3 +1,5 @@
+@mobile: ~"( max-width: 500px )";
+
 .home {
 
   .content-section {
@@ -67,6 +69,10 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+
+  @media @mobile {
+    flex-direction: column;
+  }
 }
 
 .fun-bus {
@@ -76,4 +82,19 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+}
+
+.home .content-section .text-content {
+  @media @mobile {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.content-section {
+  flex-direction: column-reverse;
 }

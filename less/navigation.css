@@ -4,6 +4,11 @@ nav a {
   margin-left: 20px;
   max-width: 800px;
 }
+@media ( max-width: 500px ) {
+  nav a {
+    flex-direction: column;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,6 +16,11 @@ nav {
   font-size: 1.7rem;
   max-width: 800px;
   align-self: center;
+}
+@media ( max-width: 500px ) {
+  nav {
+    text-align: center;
+  }
 }
 .top-section {
   max-width: 800px;
@@ -23,8 +33,35 @@ nav {
   width: 100%;
   height: auto;
 }
+@media ( max-width: 500px ) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.6rem;
+}
+@media ( max-width: 500px ) {
+  .container {
+    flex-direction: column;
+  }
+}
+.content-destination {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+@media ( max-width: 500px ) {
+  .content-destination {
+    flex-direction: column;
+  }
+}
+@media ( max-width: 500px ) {
+  .content-section {
+    flex-direction: column;
+    width: 90%;
+  }
 }

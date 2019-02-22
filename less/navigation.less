@@ -1,3 +1,5 @@
+@mobile: ~"( max-width: 500px )";
+
 // Navigation Styles here
 
 nav a{
@@ -6,6 +8,10 @@ nav a{
     align-content: space-between;
     margin-left: 20px;
     max-width: 800px;
+
+    @media @mobile {
+        flex-direction: column;
+      }
 }
 
 nav {
@@ -16,6 +22,9 @@ nav {
     max-width: 800px;
     align-self: center;
     
+    @media @mobile {
+        text-align: center;
+      }
     
 }
 
@@ -29,10 +38,36 @@ nav {
     margin: 20px 0;
     width: 100%;
     height: auto;
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
     font-size: 1.6rem;
+
+    @media @mobile {
+        flex-direction: column;
+      }
+}
+
+.content-destination {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+
+    @media @mobile {
+        flex-direction: column;
+      }
+}
+
+.content-section {
+    @media @mobile {
+        flex-direction: column;
+        width: 90%;
+      }
 }
